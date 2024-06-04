@@ -14,7 +14,7 @@ export const SigninInput = z.object({
 });
 
 export const CreateBlogInput = z.object({
-  title: z.string().min(100),
+  title: z.string().max(100),
   content: z.string(),
 });
 

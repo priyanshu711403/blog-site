@@ -20,8 +20,9 @@ userRouter.post("/signup", async (c) => {
     return c.json({ error: "incorrect inputs" });
   }
   const prisma = new PrismaClient({ datasourceUrl: c.env.DATABASE_URL }).$extends(withAccelerate());
-
+  console.log(body);
   try {
+    // console.log("in the user signup");
     const user = await prisma.user.create({ data: { email: body.email, password: body.password, name: body.name } });
     const jwt = await sign({ id: user.id }, c.env.JWT_SECRET);
     return c.json({ jwt });
