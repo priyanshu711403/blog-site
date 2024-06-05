@@ -1,4 +1,4 @@
-A medium like blog app.<br>
+A basic blog app like medium.<br>
 Stack:
 * React.js
 * cloudflare workers/hono
