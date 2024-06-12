@@ -4,3 +4,4 @@ Stack:
 * cloudflare workers/hono
 * PostgresSQL
 * Prisma ORM
+* TypeScript
