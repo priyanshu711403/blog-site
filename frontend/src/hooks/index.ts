@@ -34,3 +34,4 @@ export const useBlogs = () => {
   }, []);
   return { loading, blogs };
 };
+// export const useAuth=()=>{}

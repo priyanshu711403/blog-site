@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Avatar } from "./Avatar";
+import { Logout } from "./Logout";
 
 export const Appbar = () => {
   return (
@@ -10,6 +11,7 @@ export const Appbar = () => {
 
       <div className="flex flex-col justify-center ">
         <div className="flex  ">
+          {/* {localStorage.getItem} */}
           <Link to="/publish">
             <button
               type="button"
@@ -20,6 +22,7 @@ export const Appbar = () => {
           </Link>
 
           <Avatar name="Piri" size="large" />
+          <Logout />
         </div>
       </div>
     </div>
